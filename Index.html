@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrambal Game</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+       header{
+        height: 15vh;width: 100%;
+        background-color: #20bf6b;
+       }
+       h1{
+      
+        text-align: center;
+        color: white;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+        text-shadow:0 1px 0 #efefef, 
+                    0 2px 0 #efefef,
+                    0 3px 0 #efefef,
+                    0 4px 0 #efefef,
+                    0 30px 5px rgba(0, 0,0,.1),
+       }
+       section{
+        height:85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7bed9f;
+       }
+       .gameArea{
+        width: 50%;
+        height: 400px;
+        padding: 20px 0;
+        background-color: #2ed573;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 8px 6px -6px black;
+       }
+       h3{
+        text-align: center;
+        font-size: 1.5rem;
+       }
+       input{
+        width: 40%;
+        padding: 15px 0;
+        text-align: center;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        background-color: #dff9fb;
+        color: black;
+        margin: 2rem 0;
+        
+        font-size: 1.1rem;
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guess the word game</h1>
+    </header>
+
+    <section>
+        <div class="gameArea">
+            <h3 class="msg"></h3>
+            <input type="text" class="hidden">
+            <button class="btn">Guess</button>
+        </div>
+    </section>
+
+   <script src="./index.js"></script>
+</body>
+
+</html>
