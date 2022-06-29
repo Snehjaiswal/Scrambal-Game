@@ -28,7 +28,7 @@ let scrambleWords = (arr) => {
         arr[j] = temp;
 
     }
-    return arr;
+    return arr;.333
 }
 
 btn.addEventListener('click', function () {
